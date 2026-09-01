@@ -88,13 +88,23 @@ Finally 6 years ayipoindiii ...may be 7th year ki manam kalisi celebrate cheskun
 
 We are having bad days may be wrong time lo godavalu avutunnai i hope everthing will be fine from now ......It should.
 I accept my mistake these are the areas which i need to control,emotional ga yadoo yadoo anisa 2 days back ......
-i was feeling like i failed badly in relationship with you , epudu ki kuda naku alane undi
+i was feeling like i failed badly in relationship with you , epudu ki kuda koncham naku alane undi but it's okay everything will be fine , Sorry banagarammmmmmm 🫂
 
+Now I am going to give reply to your 📬 which was sent on 25 June 🙈.
 
+I am hoping you remember that mail.
 
-I'd still choose you. 
+It's not silyy Naku ayitee nachindiii interesting ga undii…
 
+Even I really want to try that now…mana madhya chala ayavii few months nunchiii…so I thought it would be a great if we start again…it's not easy like fresh antey because we know each other now aa character nunchi bayataki vachii manam undali antey koncham kastam…..kani we have forget past things negative things, and start again….I think it would help a lot.btw which movie it is…neenu kuda chustaa adi… we will discuss more about it like yala start chestam yanti ani …kani call lo we will  laugh emo internally.
 
+Let's celebrate this night and sacrifice the sleep for this spl day 🙈. Lvu so muchhhhhhhh , remember one thing bro eeroju neenu chestunnadu manakosam…naaku life lo antha asalu em levu kani with you manam mast ga njoy cheyali ani untadii…so had to work hard….eee madhya ala ayipotunna disciplined ga same nv kuda ala undali anukuntunna …untee baa unnu kani adi fair kadu neeku pressure cheyadam…I have to understand this .Take care of your health dpuuuuu…..Naku ee vishayam lo kopam vastadii aaaa kopam ala inkodagara impact untadii. Konni konni chuskoo health ela saree 😘😘😘😘, don't get irritated everytime cheptunna ani …workout start cheyali brooo malla …We had good chance today…neenu vastey baa unnu kani situation baledu 😔😔
+
+Let's fuck tonight 🙈🙈🙈
+
+Etlu ,
+
+Nee Chinnu❤️
 `;
 
 let letterStarted = false;
