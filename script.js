@@ -125,7 +125,7 @@ letterBtn.addEventListener("click", () => {
                     : message[index];
 
             index++;
-            setTimeout(typeLetter, 2000);
+            setTimeout(typeLetter, 200);
         }
     }
 
