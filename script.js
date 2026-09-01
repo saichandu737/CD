@@ -1,21 +1,21 @@
 
 // ===============================
-// 6TH ANNIVERSARY CRICKET SIX
+// PREMIUM CRICKET SIX REVEAL
 // ===============================
 
 function playSixAnimation() {
-    const sixAnimation = document.getElementById("sixAnimation");
-    if (!sixAnimation) return;
+    const overlay = document.getElementById("sixAnimation");
+    if (!overlay) return;
 
-    sixAnimation.classList.remove("play");
-    void sixAnimation.offsetWidth; // restart CSS animation
-    sixAnimation.classList.add("play");
+    overlay.classList.remove("play");
+    void overlay.offsetWidth;
+    overlay.classList.add("play");
 
-    setTimeout(() => {
-        sixAnimation.classList.remove("play");
-    }, 4300);
+    // Keep the surprise short and cinematic.
+    window.setTimeout(() => {
+        overlay.classList.remove("play");
+    }, 4800);
 }
-
 
 // ===============================
 // START EXPERIENCE
