@@ -1,3 +1,22 @@
+
+// ===============================
+// 6TH ANNIVERSARY CRICKET SIX
+// ===============================
+
+function playSixAnimation() {
+    const sixAnimation = document.getElementById("sixAnimation");
+    if (!sixAnimation) return;
+
+    sixAnimation.classList.remove("play");
+    void sixAnimation.offsetWidth; // restart CSS animation
+    sixAnimation.classList.add("play");
+
+    setTimeout(() => {
+        sixAnimation.classList.remove("play");
+    }, 4300);
+}
+
+
 // ===============================
 // START EXPERIENCE
 // ===============================
@@ -7,6 +26,8 @@ const intro = document.getElementById("intro");
 const mainContent = document.getElementById("mainContent");
 
 startBtn.addEventListener("click", () => {
+    playSixAnimation();
+
     intro.style.display = "none";
     mainContent.classList.remove("hidden");
 

@@ -541,3 +541,304 @@ button {
         padding: 13px 22px;
     }
 }
+
+
+/* =========================
+   CRICKET SIX SURPRISE
+   ========================= */
+
+.six-animation {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    place-items: center;
+    background: rgba(20, 10, 14, 0.88);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.six-animation.play {
+    display: grid;
+}
+
+.cricket-scene {
+    position: relative;
+    width: min(900px, 94vw);
+    height: min(520px, 78vh);
+    overflow: hidden;
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 50% 35%, rgba(255,255,255,.12), transparent 34%),
+        linear-gradient(#171329 0 42%, #1e6b43 42% 100%);
+    box-shadow: 0 30px 100px rgba(0,0,0,.45);
+    transform: scale(.72);
+    animation: sixSceneIn .45s ease-out forwards;
+}
+
+.six-animation.play .cricket-scene {
+    animation:
+        sixSceneIn .45s ease-out forwards,
+        sixSceneOut .55s ease-in 3.55s forwards;
+}
+
+.stadium-glow {
+    position: absolute;
+    width: 65%;
+    height: 55%;
+    left: 17.5%;
+    top: 4%;
+    background: radial-gradient(ellipse, rgba(255,255,255,.18), transparent 65%);
+}
+
+.cricket-ground {
+    position: absolute;
+    left: -10%;
+    bottom: -25%;
+    width: 120%;
+    height: 65%;
+    border-radius: 50% 50% 0 0;
+    background: #277a4c;
+}
+
+.pitch {
+    position: absolute;
+    width: 22%;
+    height: 58%;
+    left: 39%;
+    bottom: 7%;
+    transform: perspective(400px) rotateX(18deg);
+    background: #c9a879;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 4px rgba(255,255,255,.14);
+}
+
+.batsman {
+    position: absolute;
+    left: 39%;
+    bottom: 22%;
+    width: 120px;
+    height: 180px;
+    z-index: 4;
+    transform-origin: 50% 80%;
+}
+
+.six-animation.play .batsman {
+    animation: battingSwing .72s cubic-bezier(.55,.05,.25,1) .55s forwards;
+}
+
+.batsman-head {
+    position: absolute;
+    left: 48px;
+    top: 4px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f0b08b;
+    box-shadow: 0 -5px 0 7px #1f2630;
+}
+
+.batsman-body {
+    position: absolute;
+    left: 43px;
+    top: 40px;
+    width: 44px;
+    height: 70px;
+    border-radius: 18px 18px 10px 10px;
+    background: #f2f2f2;
+}
+
+.batsman-arm {
+    position: absolute;
+    width: 13px;
+    height: 68px;
+    top: 43px;
+    border-radius: 10px;
+    background: #f0b08b;
+    transform-origin: top center;
+}
+
+.arm-back {
+    left: 39px;
+    transform: rotate(28deg);
+}
+
+.arm-front {
+    left: 77px;
+    transform: rotate(-22deg);
+}
+
+.batsman-leg {
+    position: absolute;
+    top: 103px;
+    width: 15px;
+    height: 72px;
+    border-radius: 10px;
+    background: #222936;
+    transform-origin: top center;
+}
+
+.leg-back {
+    left: 46px;
+    transform: rotate(8deg);
+}
+
+.leg-front {
+    left: 68px;
+    transform: rotate(-13deg);
+}
+
+.bat {
+    position: absolute;
+    left: 91px;
+    top: 69px;
+    width: 14px;
+    height: 100px;
+    border-radius: 8px 8px 4px 4px;
+    background: #d6ad67;
+    transform: rotate(-40deg);
+    transform-origin: top center;
+    box-shadow: inset -3px 0 rgba(0,0,0,.08);
+}
+
+.six-animation.play .bat {
+    animation: batSwing .72s cubic-bezier(.55,.05,.25,1) .55s forwards;
+}
+
+.ball {
+    position: absolute;
+    left: 48%;
+    bottom: 35%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #d92743;
+    box-shadow: 0 0 12px rgba(255,255,255,.25);
+    z-index: 5;
+}
+
+.six-animation.play .ball {
+    animation: ballSix 1.25s cubic-bezier(.2,.65,.15,1) .95s forwards;
+}
+
+.six-text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(70px, 15vw, 150px);
+    letter-spacing: 5px;
+    color: white;
+    text-shadow:
+        0 6px 0 #ef476f,
+        0 12px 30px rgba(0,0,0,.45);
+    opacity: 0;
+    transform: scale(.35) rotate(-8deg);
+    z-index: 10;
+}
+
+.six-animation.play .six-text {
+    animation: sixReveal .9s cubic-bezier(.17,.89,.32,1.28) 1.65s forwards;
+}
+
+.six-text span {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: .55em;
+}
+
+.six-subtext {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 34px;
+    text-align: center;
+    color: white;
+    font-size: clamp(14px, 2.3vw, 21px);
+    font-weight: 600;
+    opacity: 0;
+    z-index: 11;
+}
+
+.six-animation.play .six-subtext {
+    animation: subtextReveal .6s ease-out 2.45s forwards;
+}
+
+@keyframes sixSceneIn {
+    from { opacity: 0; transform: scale(.72); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes sixSceneOut {
+    to { opacity: 0; transform: scale(1.05); }
+}
+
+@keyframes battingSwing {
+    0% { transform: rotate(0); }
+    55% { transform: rotate(-18deg); }
+    100% { transform: rotate(32deg); }
+}
+
+@keyframes batSwing {
+    0% { transform: rotate(-40deg); }
+    55% { transform: rotate(-75deg); }
+    100% { transform: rotate(55deg); }
+}
+
+@keyframes ballSix {
+    0% {
+        left: 48%;
+        bottom: 35%;
+        transform: scale(1);
+    }
+    18% {
+        left: 57%;
+        bottom: 42%;
+        transform: scale(1.1);
+    }
+    100% {
+        left: 87%;
+        bottom: 91%;
+        transform: scale(.55);
+    }
+}
+
+@keyframes sixReveal {
+    0% {
+        opacity: 0;
+        transform: scale(.35) rotate(-8deg);
+    }
+    55% {
+        opacity: 1;
+        transform: scale(1.18) rotate(3deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes subtextReveal {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .cricket-scene {
+        height: 430px;
+    }
+
+    .batsman {
+        left: 32%;
+        bottom: 20%;
+        transform: scale(.85);
+    }
+
+    .pitch {
+        width: 30%;
+        left: 35%;
+    }
+}
