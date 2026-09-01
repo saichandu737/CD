@@ -84,16 +84,17 @@ Six years ago, we started this crazy little journey together.
 Since then, we've laughed, fought, annoyed each other,
 made memories, and somehow kept choosing each other.
 
-There are so many things I could say,
-but the simplest one is probably the most important:
+Finally 6 years ayipoindiii ...may be 7th year ki manam kalisi celebrate cheskuntam emo Thala for a reason 7 ......
 
-I'm really glad it's you.
+We are having bad days may be wrong time lo godavalu avutunnai i hope everthing will be fine from now ......It should.
+I accept my mistake these are the areas which i need to control,emotional ga yadoo yadoo anisa 2 days back ......
+i was feeling like i failed badly in relationship with you , epudu ki kuda naku alane undi
 
-Thank you for these six beautiful years.
 
-And if I had to choose again...
 
-I'd still choose you. ❤️
+I'd still choose you. 
+
+
 `;
 
 let letterStarted = false;
